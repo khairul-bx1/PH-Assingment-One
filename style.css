@@ -1,73 +1,170 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
-    font-family: 'archivo';
-    src: url(fonts/archivo.ttf);
+  font-family: "archivo", "archivo-black";
+  src: url(fonts/archivo.ttf), url(fonts/archivo-black.ttf);
 }
-
+body {
+  background-color: rgb(247, 246, 255);
+}
 /*------------------------------- Hero Section style --------------------------------*/
 
 #hero-section {
-    background-image: url(images/Hero-bg.png);
-    background-size: cover;
-    height: 60vh;
+  background-image: url(images/Hero-bg.png);
+  background-size: cover;
+  height: 65vh;
 }
 
 #navbar {
-    display: flex;
-    padding: 50px 200px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 50px 200px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
-    color: rgb(55, 55, 220);
-    font-size: 1.4rem;
-    font-family: 'archivo', sans-serif;
-    cursor: pointer;
+.logo h2 {
+  color: rgb(55, 55, 220);
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-family: 'archivo', sans-serif;
+  cursor: pointer;
 }
 .sign-up button {
-     padding: 15px 40px;
-    border-radius: 12px;
-    border: none;
-    background-color: rgb(55, 55, 220);
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: pointer;
+  padding: 15px 40px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(55, 55, 220);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
 }
 
 .sign-up button:hover {
-    background-color: blue;
+  background-color: blue;
 }
 
 #banner-heading {
-    display: flex;
-    flex-direction: column;
-    margin: 100px;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
 }
 
 .heading {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 .stay-button {
-    padding: 15px 40px;
-    border-radius: 12px;
-    border: none;
-    background-color: rgb(55, 55, 220);
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: pointer;
+  padding: 15px 40px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(55, 55, 220);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
 }
 .stay-button:hover {
-    background-color: blue;
+  background-color: blue;
+}
+
+/*------------------------------- Live PreviewSection style --------------------------------*/
+
+#live {
+  margin-top: 100px;
+  padding: 0px 200px;
+}
+.live-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.live-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.live-heading {
+  font-size: 3rem;
+  font-family: "archivo-black", sans-serif;
+}
+.live-para {
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: grey;
+}
+.live-button {
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(55, 55, 220);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+.live-button:hover {
+  background-color: blue;
+}
+.live-mini-image {
+  border-radius: 50px;
+}
+
+/*------------------------------- Live User style --------------------------------*/
+
+#live-user {
+  padding: 0px 200px;
+  margin: 100px auto;
+  width: 160vh;
+  height: 32vh;
+  background-color: rgb(234, 234, 250);
+  border-radius: 20px;
+  text-align: center;
+}
+.user-heading h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 2.6rem;
+  font-family: "archivo", sans-serif;
+  font-weight: 750;
+}
+.users {
+  display: flex;
+  justify-content: center;
+  gap: 400px;
+  margin-top: 50px;
+}
+
+.user-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.user-item h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: rgb(55, 55, 220);
+  margin: 0;
+  font-family: "archivo", sans-serif;
+}
+
+.user-item strong {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #959292e2;
 }
