@@ -20,7 +20,7 @@ body {
 
 #navbar {
   display: flex;
-  padding: 50px 200px;
+  padding: 50px 240px;
   justify-content: space-between;
   align-items: center;
 }
@@ -29,7 +29,7 @@ body {
   color: rgb(55, 55, 220);
   font-size: 2.4rem;
   font-weight: 800;
-  font-family: 'archivo', sans-serif;
+  font-family: "archivo", sans-serif;
   cursor: pointer;
 }
 .sign-up button {
@@ -79,7 +79,7 @@ body {
 
 #live {
   margin-top: 100px;
-  padding: 0px 200px;
+  padding: 0px 240px;
 }
 .live-section {
   display: flex;
@@ -125,7 +125,7 @@ body {
 #live-user {
   padding: 0px 200px;
   margin: 100px auto;
-  width: 160vh;
+  width: 150vh;
   height: 32vh;
   background-color: rgb(234, 234, 250);
   border-radius: 20px;
@@ -167,4 +167,139 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
   color: #959292e2;
+}
+
+/*------------------------------- Testimonial Section style --------------------------------*/
+
+.testimonial-section {
+  margin: 100px;
+}
+
+.testimonial-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 450px;
+  height: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  color: #facc15;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 0 0px 0;
+  color: #111827;
+}
+
+.testimonial-card p {
+  font-size: 20px;
+  color: #4b5563;
+  margin: 0 0 10px 0;
+}
+
+.review-box {
+  display: flex;
+  align-items: center;
+}
+
+.review-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-info h5 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 750;
+  color: #374151;
+}
+
+.review-info span {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/*------------------------------- Trial Section style --------------------------------*/
+
+#free-trial {
+  width: 150vh;
+  height: 75vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0px auto;
+  border-radius: 30px;
+}
+.trial-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 40px;
+}
+.trial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.trial h2 {
+  font-size: 50px;
+  font-family: "archivo", sans-serif;
+  font-weight: 700;
+}
+.trial p {
+  font-size: 20px;
+  color: rgba(160, 160, 160, 0.767);
+}
+.trial button {
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(55, 55, 220);
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+.trial button:hover {
+  background-color: blue;
+}
+.trial-image img {
+  border-radius: 30px;
 }
